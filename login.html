@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Sign In</title>
+<link href='css\exstyle.css' type='text/css' rel="StyleSheet"/>
+<script type='text/javascript'>
+function f1()
+{
+alert("hi");
+return false;
+}
+function test() {
+    var username;
+username=document.getElementById("txtUserName").value;
+if(username=='')
+alert("User name is required")
+    var cboxes = document.getElementsByName('mailid');
+    var len = cboxes.length;
+    for (var i=0; i<len; i++) {
+        alert(cboxes[i].value+ (cboxes[i].checked?' checked ':' unchecked '));
+    }
+}
+</script>
+</head>
+<body>
+<form id="f1">
+<input type='checkbox' value='vijay@gmail.com' name='mailid'/>vijay@gmail.com
+<input type='checkbox' value='ajay@gmail.com' name='mailid'/>ajay@gmail.com
+<input type='checkbox' value='shiva@gmail.com' name='mailid'/>shiva@gmail.com
+
+<table border="2" align='center'>
+<tr>
+<td colspan="2" align='center'><h3>Login Here</h3></td>
+</tr>
+<tr>
+<td class='mystyle'>User Name</td>
+<td>
+<input type='text' id='txtUserName' name='txtUserName'/>
+</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>
+<input type='password' id='txtPassword' name='txtPassword'/>
+</td>
+</tr>
+<tr>
+<td>
+<input type='submit' onclick='test()' id='btnLogin' value='Login'/>
+</td>
+<td>
+<input type='button' onclick='javascript:alert("Its me")' id='btnClear' value='Clear'/>
+</td>
+</tr>
+<!--
+<tr>
+<td colspan="2" align='center'>
+New user? <a href='register.html'>Sign Up</a>
+
+</td>
+</tr>
+-->
+</table>
+
+</form>
+</body>
+
+</html>

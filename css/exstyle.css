@@ -1,0 +1,15 @@
+.mystyle{
+color:red;
+background-color:green;
+font-family:Arial;
+font-size:20px
+}
+#myaddress{
+background-color:red
+}
+textarea{
+color:green
+}
+#txtUserName{
+color:cyan
+}
